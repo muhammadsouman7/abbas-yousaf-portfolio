@@ -1,0 +1,439 @@
+body {
+    font-style: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-image: url("background-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/**********************
+      Index.html 
+**********************/
+
+
+/* Navigation Bar */
+
+.navbar {
+    box-shadow: 5px 5px 10px #c1c1c1;
+}
+
+.navbar-brand h4 {
+    font-size: 1.3rem;
+    margin: 8px 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    transition: ease-in-out 0.3s;
+    position: relative;
+}
+
+.navbar-nav .nav-item .active {
+    color: #4ace53;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #4ace53;
+}
+
+.intro {
+    width: 100%;
+    min-height: 100vh;
+    background: url("background.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 120px 0;
+    z-index: 3;
+}
+
+.intro .container {
+    z-index: 1;
+}
+
+@media (min-width: 1365px) {
+    .intro {
+        background-attachment: fixed;
+    }
+}
+
+.intro h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.intro h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.intro span {
+    color: #4ace53;
+}
+
+.section-header h2::after,
+.section-header h2::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+    background-color: #4ace53;
+    margin: 10px 15px;
+}
+
+
+/**********************
+      About.html 
+**********************/
+
+#about-me {
+    margin: 10px 20px;
+    opacity: 0.9;
+}
+
+.about-me,
+.services {
+    padding: 20px 0;
+}
+
+.about-me,
+.contact {
+    background-color: #eeeeee;
+    padding-bottom: 60px;
+}
+
+.about-me .section-header,
+.services .section-header,
+.portfolio .section-header,
+.contact .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .section-header h2,
+.services .section-header h2,
+.portfolio .section-header h2,
+.contact .section-header h2 {
+    margin: 30px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #4ace53;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-more a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 50px;
+    border: 1px solid #4ace53;
+    border-radius: 25px;
+    color: #4ace53;
+    transition: 0.3s ease-in-out;
+}
+
+.learn-more a:hover {
+    background-color: #4ace53;
+    color: #fff;
+}
+
+.about-me a {
+    color: #4ace53;
+}
+
+.skills-content .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    margin: 10px;
+}
+
+.skills-content .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: #4ace53;
+}
+
+.skills-content .progress .skill .percent {
+    float: right;
+    color: #4ace53;
+}
+
+.skills-content .progress-bar-wrap {
+    background-color: rgba(255, 255, 255);
+}
+
+.skills-content .progress-bar {
+    height: 10px;
+    transition: 0.9s;
+    background-color: #4ace53;
+}
+
+.skills-content .html,
+.skills-content .css {
+    width: 95%;
+}
+
+.skills-content .bootstrap,
+.skills-content .ui-ux {
+    width: 90%;
+}
+
+.skills-content .js {
+    width: 80%;
+}
+
+.skills-content .jquery {
+    width: 85%;
+}
+
+.why-me ul {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.why-me ul li {
+    margin-bottom: 10px;
+}
+
+.why-me ul i {
+    color: #4ace53;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+
+/**********************
+      Service.html 
+**********************/
+
+#services {
+    margin: 10px 20px;
+    opacity: 0.9;
+}
+
+.home-services {
+    background: url("services.jpg") top center;
+    background-size: cover;
+    padding-bottom: 60px
+}
+
+.services {
+    background-color: #eeeeee;
+    padding-bottom: 60px;
+}
+
+.my-services .service-item {
+    height: 200px;
+    padding: 15px;
+    border: 1px solid #4ace53;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.my-services .service-item .icon i {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: #fff;
+    background-color: #4ace53;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.my-services .service-item .title {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #4ace53;
+}
+
+.my-services .service-item .description {
+    line-height: 24px;
+    font-size: 14px;
+    color: #4ace53;
+}
+
+.my-services .service-item:hover {
+    background-color: #4ace53;
+}
+
+.my-services .service-item:hover .title,
+.my-services .service-item:hover .description {
+    color: #fff;
+}
+
+.my-services .service-item:hover .icon i {
+    color: #4ace53;
+    background-color: #fff;
+}
+
+
+/**********************
+      Portfolio.html 
+**********************/
+
+#portfolio {
+    margin: 10px 20px;
+    opacity: 0.9;
+}
+
+.portfolio {
+    background-color: #eeeeee;
+    padding-bottom: 60px;
+}
+
+.my-portfolio .company-title {
+    color: #4ace53;
+    margin: 20px 0;
+}
+
+.my-portfolio .carousel {
+    border: 2px solid #4ace53;
+    border-radius: 5px;
+}
+
+
+/**********************
+      Contact.html 
+**********************/
+
+#contact {
+    margin: 10px 20px;
+    opacity: 0.9;
+}
+
+.contact .info-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #4ace53;
+    background-color: #d4d4d4;
+    height: 90px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact .info-item+.info-item {
+    margin-top: 40px;
+}
+
+.contact .info-item i {
+    font-size: 20px;
+    background-color: #4ace53;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact .info-item h4 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #4ace53;
+}
+
+.contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact .info-item:hover {
+    background-color: #4ace53;
+}
+
+.contact .info-item:hover i {
+    color: #4ace53;
+    background-color: #fff;
+}
+
+.contact .info-item:hover h4 {
+    color: #fff;
+}
+
+.contact .info-item:hover p {
+    color: #fff;
+}
+
+.contact .email-form {
+    border: 1px solid #4ace53;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    transition: 0.3s ease-in-out;
+}
+
+.contact .email-form:hover {
+    background-color: #4ace53;
+}
+
+.contact .email-form {
+    width: 100%;
+}
+
+.contact .email-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 12px 15px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+    border-bottom: 3px solid #4ace53;
+}
+
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+    border-color: #28742d;
+}
+
+.contact .email-form textarea {
+    padding: 10px 12px;
+}
+
+.contact .email-form button[type=submit] {
+    border-radius: 25px;
+    border: none;
+    background-color: #4ace53;
+    height: 50px;
+    padding: 10px 40px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.contact .email-form:hover button[type=submit] {
+    background-color: #fff;
+    color: #4ace53;
+}
